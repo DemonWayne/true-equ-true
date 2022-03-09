@@ -1,2 +1,2 @@
 # true-equ-true
-Best lib to compare true and true
+Best lib to compare true with true
