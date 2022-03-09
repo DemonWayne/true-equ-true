@@ -1,0 +1,22 @@
+{
+  "name": "true-equ-true",
+  "version": "1.0.0",
+  "description": "Best lib to compare true with true",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemonWayne/true-equ-true.git"
+  },
+  "author": "Dave_Shelby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemonWayne/true-equ-true/issues"
+  },
+  "homepage": "https://github.com/DemonWayne/true-equ-true#readme",
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  }
+}
