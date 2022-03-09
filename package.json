@@ -1,6 +1,6 @@
 {
-  "name": "true-equ-true",
-  "version": "1.0.0",
+  "name": "@demonwayne/true-equ-true",
+  "version": "1.0.1",
   "description": "Best lib to compare true with true",
   "main": "src/index.js",
   "scripts": {
