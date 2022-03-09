@@ -1,15 +1,97 @@
 'use strict';
 
-exports.checkTrue = constant => {
-  if (!!constant === true) return true;
-  else return false;
+exports.isTrue = _requestedContextForCheck => 
+{
+  if 
+  (
+    typeof _requestedContextForCheck === 'boolean' &&
+    typeof _requestedContextForCheck !== 'string' &&
+    typeof _requestedContextForCheck !== 'number' &&
+    typeof _requestedContextForCheck !== 'object' &&
+    typeof _requestedContextForCheck !== 'symbol' &&
+    typeof _requestedContextForCheck !== 'undefined' &&
+    typeof _requestedContextForCheck !== 'bigint' &&
+    typeof _requestedContextForCheck !== 'function'
+  )
+  {
+    return Boolean(_requestedContextForCheck) === true;
+  } 
+  else if 
+  (
+    typeof _requestedContextForConvert !== 'boolean' &&
+    typeof _requestedContextForConvert === 'string' ||
+    typeof _requestedContextForConvert === 'number' ||
+    typeof _requestedContextForConvert === 'object' ||
+    typeof _requestedContextForConvert === 'symbol' ||
+    typeof _requestedContextForConvert === 'undefined' ||
+    typeof _requestedContextForConvert === 'bigint' ||
+    typeof _requestedContextForConvert === 'function'
+  )
+  {
+    return Boolean(_requestedContextForCheck) === true;
+  }
 };
 
-exports.checkFalse = constant => {
-  if (!!constant === false) return true;
-  else return false;
+exports.isFalse = _requestedContextForCheck => 
+{
+  if 
+  (
+    typeof _requestedContextForCheck === 'boolean' &&
+    typeof _requestedContextForCheck !== 'string' &&
+    typeof _requestedContextForCheck !== 'number' &&
+    typeof _requestedContextForCheck !== 'object' &&
+    typeof _requestedContextForCheck !== 'symbol' &&
+    typeof _requestedContextForCheck !== 'undefined' &&
+    typeof _requestedContextForCheck !== 'bigint' &&
+    typeof _requestedContextForCheck !== 'function'
+  )
+  {
+    return Boolean(_requestedContextForCheck) === false;
+  }
+  else if 
+  (
+    typeof _requestedContextForConvert !== 'boolean' &&
+    typeof _requestedContextForConvert === 'string' ||
+    typeof _requestedContextForConvert === 'number' ||
+    typeof _requestedContextForConvert === 'object' ||
+    typeof _requestedContextForConvert === 'symbol' ||
+    typeof _requestedContextForConvert === 'undefined' ||
+    typeof _requestedContextForConvert === 'bigint' ||
+    typeof _requestedContextForConvert === 'function'
+  )
+  {
+    return Boolean(_requestedContextForCheck) === false;
+  }
 };
 
-exports.toBoolean = constant => {
-  return !!constant;
+exports.toBoolean = _requestedContextForConvert => 
+{
+  if 
+  (
+    typeof _requestedContextForConvert !== 'boolean' &&
+    typeof _requestedContextForConvert === 'string' ||
+    typeof _requestedContextForConvert === 'number' ||
+    typeof _requestedContextForConvert === 'object' ||
+    typeof _requestedContextForConvert === 'symbol' ||
+    typeof _requestedContextForConvert === 'undefined' ||
+    typeof _requestedContextForConvert === 'bigint' ||
+    typeof _requestedContextForConvert === 'function'
+  )
+  {
+    return Boolean(_requestedContextForConvert);
+  }
+  else if 
+  (
+    typeof _requestedContextForConvert === 'boolean' &&
+    typeof _requestedContextForConvert !== 'string' ||
+    typeof _requestedContextForConvert !== 'number' ||
+    typeof _requestedContextForConvert !== 'object' ||
+    typeof _requestedContextForConvert !== 'symbol' ||
+    typeof _requestedContextForConvert !== 'undefined' ||
+    typeof _requestedContextForConvert !== 'bigint' ||
+    typeof _requestedContextForConvert !== 'function'
+  )
+  {
+    return Boolean(_requestedContextForConvert);
+  }
 };
